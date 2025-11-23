@@ -1,18 +1,18 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image', './gke-cicd/app1']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/quickstart-image', './gke-cicd/app1']
   id: 'Build Docker Image 1'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image']
+  args: ['push', 'us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/quickstart-image']
   id: 'Push Docker Image 1'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/flask-image', './gke-cicd/app2']
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/flask-image', './gke-cicd/app2']
   id: 'Build Docker Image 2'
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'us-central1-docker.pkg.dev/<your-project-id>/gke-repo/flask-image']
+  args: ['push', 'us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/flask-image']
   id: 'Push Docker Image 2'
 
 - name: 'google/cloud-sdk:latest'

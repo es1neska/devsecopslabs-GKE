@@ -6,5 +6,5 @@ metadata:
   labels: {}
 description: dev
 gke:
-  cluster: projects/<your-project-id>/locations/us-central1-c/clusters/cluster-1
+  cluster: projects/cicd-pipeline-479119/locations/us-central1-c/clusters/cluster-1
 

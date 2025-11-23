@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-central1-docker.pkg.dev/<your-project-id>/gke-repo/quickstart-image
+          image: us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/quickstart-image
           ports:
             - containerPort: 8080
 ---
@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: us-central1-docker.pkg.dev/<your-project-id>/gke-repo/flask-image
+          image: us-central1-docker.pkg.dev/cicd-pipeline-479119/gke-repo/flask-image
           ports:
             - containerPort: 8081
 ---
